@@ -1,0 +1,158 @@
+
+<div class="col-sm-12" ng-init="getAvailableRoutes()">
+   <h4 id="createRouteHeading" class="alert alert-info">Create Route</h4>
+    <span class="alert alert-{{infoColor}} col-sm-12" ng-show="routeMessage" >
+           {{mes}}.
+    </span>
+   
+    <ng-form name="form" nonvalidate>
+        <div>
+            <ng-form name="form1">
+                <div class="form-group">
+                    <div class="col-xs-3">
+                       
+                       <label>Start Location :<span class=" red_color">*</span></label> <input class="form-control" type="text" id="exampleInputStart" ng-model="routeAdd.start_location" ng-pattern="$parent.resourceConfig.regPattern.address" ng-disabled="checked"  ng-minlength="minLength" uib-popover="Name must be alphanumeric and min 3 characters " popover-is-open="{{routeAdd.start_location.length==undefined}}" popover-enable=
+                       "{{routeAdd.start_location.length==undefined}}"  popover-trigger="blur" popover-placement="top-right"   required>
+                    </div>
+                    <div class="col-xs-3">
+                        <label>End Location:</label><span class=" red_color">*</span><input class="form-control" type="text" id="exampleInputEnd"  ng-model="routeAdd.end_location" ng-pattern="$parent.resourceConfig.regPattern.address" ng-disabled="checked"  ng-minlength="minLength"  uib-popover="Name must be alphanumeric and min 3 characters " popover-is-open="{{routeAdd.end_location.length==undefined}}" popover-enable=
+                       "{{routeAdd.end_location.length==undefined}}"  popover-trigger="blur" popover-placement="top-right" required>
+                    </div>
+                    <div class="col-xs-2">
+                       <label>Route No:</label><span class=" red_color">*</span> <input class="form-control" type="text" id="exampleInputRoteno"  ng-blur="checkLength()" ng-model="routeAdd.route_no" ng-pattern="$parent.resourceConfig.regPattern.route_no" ng-disabled="checked" min="1"  ng-maxlength=20  uib-popover="Invalid route number." popover-is-open="{{routeAdd.route_no.length==undefined}}" popover-enable="{{routeAdd.route_no.length==undefined}}"  popover-trigger="blur" popover-placement="top-right" required>
+                    </div>
+                    <div class="col-xs-4">
+                         <div>&nbsp;</div>
+            
+                        <button class="btn btn-info" ng-click="addRoute()" ng-disabled="form1.$invalid" ng-hide = "selectedId">{{buttonName}}</button>
+                        <button class="btn btn-info" ng-click="resetRoute()" ng-disabled="resetValue">Reset</button>
+                        <button type="submit"class ="btn btn-info" ng-click="editRoute(false)" ng-disabled="form1.$pristine  " ng-show="onstopAdd">Update</button>
+                    </div>
+                    
+                </div>
+            </ng-form>
+        </div>
+
+ 
+        <div style="clear:both; padding:10px 0px;">
+        <div id="createStoppageHeading"><h4 class="alert alert-info">Create Stoppage</h4></div>
+    <ng-map default-style="true" style="height:250px" zoom="15" center="{{stopAdd.lat ? stopAdd.lat : '28.60919459317937'}},{{stopAdd.long ? stopAdd.long : '77.21790676074215'}}">
+     <marker id="foo" position="{{stopAdd.lat ? stopAdd.lat : '28.60919459317937'}},{{stopAdd.long ? stopAdd.long : '77.21790676074215'}}" draggable="true" on-dragend="dragEnd()"></marker>
+      <!--<info-window id="myInfoWindow" visible-on-marker="foo" position="{{stopAdd.lat ? stopAdd.lat : '28.60919459317937'}},{{stopAdd.long ? stopAdd.long : '77.21790676074215'}}">
+        <div ng-non-bindable>
+          <p>Abhishek</p>
+        </div>
+      </info-window>-->
+    </ng-map>
+
+        </div>
+        <div class="form-group" style="clear:both; padding:10px 0px;">
+            <div style="clear:both;">
+                
+           <span class="alert alert-{{infoColor}} col-sm-12" ng-show="addStoppageMsg">
+                {{msg}}
+              </span>
+     
+    
+            </div>
+              
+            <ng-form name="form2">
+                <div class="col-xs-10" style="padding:10px 10px 10px 0px;">
+                    <label id="stoppageAddress">Stoppage address</label><span class=" red_color">*</span><input type="text" class="form-control" id="exampleInputStoppage" ng-model="stopAdd.stoppage_name" ng-disabled="form1.$invalid" ng-change="changeLocation()" ng-blur="fetchLatLong()"required>
+                </div>
+                <div class="col-xs-2" style="padding:10px 0px;">
+                    <div>&nbsp;</div>
+                    <button class="btn btn-warning" ng-click="fetchLatLong()" ng-disabled="form1.$invalid || form3.$valid || form2.$pristine">Get Lat/Lng</button>
+                </div>
+            </ng-form>
+
+
+            
+            <ng-form name="form3" >
+                <div class="col-xs-5" style="padding:10px 10px 10px 0px;">
+                    <label> Latitude:</label><span class=" red_color">*</span><input  class="form-control" id="exampleInputLat"  ng-pattern="$parent.resourceConfig.regPattern.lat" ng-disabled="true" ng-model="stopAdd.lat" ng-change="changeAddress()" required>
+                </div>
+
+                <div class="col-xs-5" style="padding:10px 10px 10px 0px;">
+                   <label> Longitude:</label><span class=" red_color">*</span><input  class="form-control" id="exampleInputLong"  ng-patteren="/^[+-]?((90\.?0*$)|(([0-8]?[0-9])\.?[0-9]*$))/" ng-model="stopAdd.long" ng-disabled="true" ng-change="changeAddress()" required>
+                </div>
+<!--                 <div class="col-xs-2" style="padding:10px 0px;">
+                    <div>&nbsp;</div>
+                    <button class="btn btn-warning" ng-click="fetchAddress()" ng-disabled="form3.$invalid">Get Address</button>
+                </div> -->
+            </ng-form>
+            
+           
+
+
+            <div class="col-xs-2 pull-right" style="padding:10px 0px;">
+                <div>&nbsp;</div>
+                <span><button class="btn btn-info" ng-click="addAddress()"  ng-show="isStoppageSave"ng-disabled="form.$invalid">Save Stoppage</button></span>
+                
+                <span><button class="btn btn-info" ng-show="isStoppageEdit" ng-click="editStoppage(false)" ng-disabled="form.$invalid">Update</button></span>
+            </div>
+
+        </div>
+       <!--to remove grid -->
+        <div ng-show="grid.length" class="col-sm-12">
+       <h2 >Available Stoppages</h2>
+        <div class="col-sm-12" style=" height: auto; max-height: 200px; overflow-y: scroll; ">
+         <table class="table table-hover" >
+        <thead >
+              <tr style="background:#d6d6c2">
+                <th>Stoppage Name</th>
+                  <th>Lattitude</th>
+                  <th>Longitude</th>
+                  <th>Action</th>
+              
+                
+            </tr>
+        </thead>
+             <tbody>
+             <tr  ng-repeat="stoppage in grid">
+            <td>{{stoppage.stoppage_name}}</td>
+              <td>{{stoppage.lat}}</td>
+              <td>{{stoppage.long}}</td>
+             <td><span><a title="Delete"> <i class="glyphicon glyphicon-remove" style=" cursor:pointer;font-size:23px;padding-right:1em" ng-click="removeStop(stoppage)"></i></a></span><span><a title="Edit"><i class="glyphicon glyphicon-edit"  style="cursor:pointer;font-size:23px;padding-right:1em" ng-click=" editStoppage(stoppage)"></i></a></span><span><a title="Add student"><i  class="glyphicon glyphicon-user" style="font-size:23px;padding-right:1em;cursor:pointer" ng-click="addStudent(stoppage,routeAdd)"></i></a></span></td>
+    
+             
+        </tr>
+      <tbody>
+        
+    </table>
+       
+   </div>
+</div>
+    
+         <input type="hidden" id="msgBox">
+    </ng-form>
+    
+    <span id="removeRouteMessageAlert" class="alert alert-{{infoColor}} col-sm-12" ng-show="removeRouteMsg">
+                {{msg}}
+   </span>
+    <div ng-show="routeList.length>0" class="col-sm-12">
+        <h2 >Available Routes</h2>
+    <table class="table table-hover">
+        <thead>
+              <tr style="background:#d6d6c2">
+                <th>Route No</th>
+                <th>Start</th>
+                <th>End</th>
+                <th>Stoppage</th>
+                <th>Remove|Edit</th>
+                
+            </tr>
+        </thead>
+       <tr  ng-repeat="route in routeList">
+            <td>{{route.route_no}}</td>
+            <td>{{route.start_location}}</td>
+            <td>{{route.end_location}}</td>
+            <td> <p> <span style="cursor:pointer" class="glyphicon glyphicon-plus" ng-click=addStoppages(route)></span></p>  </td>
+              <td> <p ><span ng-if="route.student_count==0  "><span style="cursor:pointer" class="glyphicon glyphicon-remove" ng-click=removeRoute(route)></span>|</span> 
+                  <span ng-if="route.student_count!=0 "><span  title="Student exists in this route" style="color:grey;"class="glyphicon glyphicon-remove" ng-click=false></span>|</span><span style="cursor:pointer" class="glyphicon glyphicon-edit "  ng-click=editRoute(route)></span></p></td>
+             
+        </tr>
+    </table>
+    </div>
+
+</div>

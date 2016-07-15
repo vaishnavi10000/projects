@@ -1,0 +1,136 @@
+{
+    "getRoutes": [{
+        "schoolId": 1,
+        "routes": [{
+            "route_id": 1,
+            "route_no": 1,
+            "start_location": "Start Location Name",
+            "end_location": "End Location Name",
+            "driver_id": 98790,
+            "driver_name": "Rama",
+            "vehicle_id": 222,
+            "vehicle_name": "Bus",
+            "vehicle_no": "DL 13S, F4565",
+            "stoppage": [{
+                "stoppage_id": 1,
+                "stoppage_name": "abc"
+            }, {
+                "stoppage_id": 2,
+                "stoppage_name": "a1b1c1"
+            }]
+            }, {
+            "route_id": 2,
+            "route_no": 2,
+            "start_location": "Start Location Name",
+            "end_location": "End Location Name",
+            "driver_id": 98790,
+            "driver_name": "Shyam",
+            "vehicle_id": 222,
+            "vehicle_name": "Bus",
+            "vehicle_no": "DL 12S, F4565",
+            "stoppage": [{
+                "stoppage_id": 3,
+                "stoppage_name": "xyz"
+            }, {
+                "stoppage_id": 4,
+                "stoppage_name": "x1y1z1"
+            }]
+            }, {
+            "route_id": 3,
+            "route_no": 3,
+            "start_location": "Start Location Name",
+            "end_location": "End Location Name",
+            "driver_id": 98790,
+            "driver_name": "Mohan",
+            "vehicle_id": 222,
+            "vehicle_name": "Bus",
+            "vehicle_no": "DL 11S, F4565",
+            "stoppage": [{
+                "stoppage_id": 5,
+                "stoppage_name": "mnp"
+            }, {
+                "stoppage_id": 6,
+                "stoppage_name": "m1n1p1"
+            }]
+            }]
+    }],
+    "getDrivers": [{
+        "driver_id": 1,
+        "driver_name": "Ram",
+        "mobile_no": "9992200546",
+        "licence": "image",
+        "route_id": 3,
+        "route_": 394,
+        "vehicle_id": 83,
+        "vehicle_no": "DL 13S, F4565"
+    }, {
+        "driver_id": 2,
+        "driver_name": "Shyam",
+        "mobile_no": "8700900546",
+        "licence": "image",
+        "route_id": 4,
+        "route_": 393,
+        "vehicle_id": 84,
+        "vehicle_no": "DL 12S, F4565"
+    }, {
+        "driver_id": 3,
+        "driver_name": "Mohan",
+        "mobile_no": "7890554321",
+        "licence": "image",
+        "route_id": 5,
+        "route_": 395,
+        "vehicle_id": 86,
+        "vehicle_no": "DL 11S, F4565"
+    }],
+    "getVehicles": [{
+        "vehicle_id": 1,
+        "vehicle_name": "Bus",
+        "vehicle_no": "DL 13S, F4565",
+        "seats": 50
+    }, {
+        "vehicle_id": 2,
+        "vehicle_name": "Bus 2",
+        "vehicle_no": "DL 12S, F4565",
+        "seats": 40
+    }, {
+        "vehicle_id": 3,
+        "vehicle_name": "Bus 3",
+        "vehicle_no": "DL 11S, F4565",
+        "seats": 35
+    }, {
+        "vehicle_id": 4,
+        "vehicle_name": "Bus 4",
+        "vehicle_no": "DL 10S, F4565",
+        "seats": 56
+    }],
+    "getStoppageStudents": [{
+        "route_id": 1,
+        "stoppage_name": "Mamura",
+        "students": [{
+            "student_id": 1,
+            "class_idsection": "ii B",
+            "student_name": "Ram",
+            "contact_number": 78676823424
+        }, {
+            "student_id": 2,
+            "class_idsection": "ii C",
+            "student_name": "Shyam",
+            "contact_number": 78676823423
+        }]
+    }],
+    "getAssignedVehicles": [{
+        "driver_name": "Ram",
+        "driver_id": 1,
+        "vehicle_no": "DL 13 SF 9196",
+        "vehicle_id": 1,
+        "route_no": 1,
+        "route_id": 1
+    }, {
+        "driver_name": "Shyam",
+        "driver_id": 2,
+        "vehicle_no": "DL 12 SF 9196",
+        "vehicle_id": 2,
+        "route_no": 2,
+        "route_id": 2
+    }]
+}

@@ -1,0 +1,219 @@
+{
+    "transport":[
+        {
+            "statuscode":1001,
+            "action":"DB connection error",
+            "desciption":"Internal server error!"
+        },
+        {
+            "statuscode":1002,
+            "action":"Data Fetched",
+            "desciption":"Success"
+        },
+         {
+            "statuscode":1003,
+            "action":"DB query error",
+            "desciption":"Internal server error!"
+        },
+        {
+            "statuscode":1004,
+            "action":"DB connection timeout error",
+            "desciption":"Internal server error!"
+        },
+        {
+            "statuscode":1005,
+            "action":"School",
+            "desciption":"No school_id found"
+        },
+        {
+            "statuscode":1006,
+            "action":"School",
+            "desciption":"School Inactive"
+        },
+        {
+            "statuscode":1007,
+            "action":"Route",
+            "desciption":"Start/End location and Route no. are required!"
+        },
+        {
+            "statuscode":1008,
+            "action":"Route",
+            "desciption":"No stoppage found on this route"
+        },
+        {
+            "statuscode":1009,
+            "action":"Route",
+            "desciption":"Route already exists"
+        },
+        {
+            "statuscode":1010,
+            "action":"Route",
+            "desciption":"Route added Successfully"
+        },
+        {
+            "statuscode":1011,
+            "action":"Route",
+            "desciption":"Route Deleted"
+        },
+        {
+            "statuscode":1012,
+            "action":"Route",
+            "desciption":"Route Deletion Failed"
+        },
+        {
+            "statuscode":1013,
+            "action":"Stoppage",
+            "desciption":"Stoppage added succesfully"
+        },
+        {
+            "statuscode":1014,
+            "action":"Stoppage",
+            "desciption":"Stoppage deleted sucessfully"
+        },
+        {
+            "statuscode":1015,
+            "action":"Stoppage",
+            "desciption":"Only valid numbers allowed for latitude and longitude"
+        },
+         {
+            "statuscode":1016,
+            "action":"Stoppage",
+            "desciption":"No stoppages"
+        },
+        {
+            "statuscode":1017,
+            "action":"Driver",
+            "desciption":"driver_name/mobile_no required"
+        },
+        {
+            "statuscode":1018,
+            "action":"Driver",
+            "desciption":"Mobile Number already exists"
+        },
+        {
+            "statuscode":1019,
+            "action":"Driver",
+            "desciption":"Driver Added"
+        },
+        {
+            "statuscode":1020,
+            "action":"Driver",
+            "desciption":"driver_id required"
+        },
+        {
+            "statuscode":1021,
+            "action":"Driver",
+            "desciption":"Driver deleted"
+        },
+        {
+            "statuscode":1022,
+            "action":"Driver",
+            "desciption":"Deletion not successful"
+        },
+        {
+            "statuscode":1023,
+            "action":"Driver",
+            "desciption":"No Driver currently added"
+        },
+        {
+            "statuscode":1024,
+            "action":"Student",
+            "desciption":"No stoppage has student on this route"
+        },
+        {
+            "statuscode":1025,
+            "action":"Student",
+            "desciption":"No route found"
+        },
+        {
+            "statuscode":1026,
+            "action":"Student",
+            "desciption":"No stoppage found"
+        },
+        {
+            "statuscode":1027,
+            "action":"Student",
+            "desciption":"No classes found for this school"
+        },
+        {
+            "statuscode":1028,
+            "action":"Student",
+            "desciption":"No section found for this school"
+        },
+        {
+            "statuscode":1029,
+            "action":"Student",
+            "desciption":"No student found in this section"
+        },
+        {
+            "statuscode":1030,
+            "action":"Vehicle",
+            "desciption":"Vehicle number/name/seats required"
+        },
+         {
+            "statuscode":1031,
+            "action":"Vehicle",
+            "desciption":"vehicle added"
+        },
+         {
+            "statuscode":1032,
+            "action":"Vehicle",
+            "desciption":"vehicle already exists"
+        },
+         {
+            "statuscode":1033,
+            "action":"Vehicle",
+            "desciption":"no vehicles found"
+        },
+        {
+            "statuscode":1034,
+            "action":"Vehicle",
+            "desciption":"cannot delete vehicle"
+        },
+        {
+            "statuscode":1035,
+            "action":"Vehicle",
+            "desciption":"vehicle deleted"
+        },
+        {
+            "statuscode":1036,
+            "action":"Assign",
+            "desciption":"assigned"
+        },
+        {
+            "statuscode":1037,
+            "action":"Assign",
+            "desciption":"cannot assign"
+        },
+        {
+            "statuscode":1038,
+            "action":"Assign",
+            "desciption":"already assigned"
+        },
+         {
+            "statuscode":1039,
+            "action":"Assign",
+            "desciption":"No assigned vehicle"
+        },
+        {
+            "statuscode":1040,
+            "action":"Assign",
+            "desciption":"cannot unassign"
+        },
+        {
+            "statuscode":1041,
+            "action":"Assign",
+            "desciption":"unassigned"
+        },
+         {
+            "statuscode":1042,
+            "action":"Auth",
+            "desciption":"Credentials missing"
+        },
+        {
+            "statuscode":1043,
+            "action":"Server Error",
+            "desciption":"Internal Server Error!"
+        }
+    ]
+}

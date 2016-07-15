@@ -1,0 +1,79 @@
+{
+    "Stoppage": [
+        {
+            "stoppage_id": 1,
+            "order_no": 0,
+            "stoppage_name": "Noida sector 62",
+            "lat": 584,
+            "route_id": 1,
+            "long": 56.454545
+},
+        {
+            "stoppage_id": 2,
+            "order_no": 0,
+            "stoppage_name": "Mayur vihar",
+            "lat": 62,
+            "route_id": 2,
+            "long": 56
+},
+        {
+            "stoppage_id": 3,
+            "order_no": 0,
+            "stoppage_name": "CP Delhi",
+            "lat": 584,
+            "route_id": 3,
+            "long": 56.454545
+},
+        {
+            "stoppage_id": 4,
+            "order_no": 0,
+            "stoppage_name": "Noida sector 112",
+            "lat": 584,
+            "route_id": 1,
+            "long": 56.454545
+},
+        {
+            "stoppage_id": 5,
+            "order_no": 0,
+            "stoppage_name": "noida sector 15",
+            "lat": 584,
+            "route_id": 1,
+            "long": 56.454545
+},
+        {
+            "stoppage_id": 6,
+            "order_no": 0,
+            "stoppage_name": "Mayur vihar extension",
+            "lat": 584,
+            "route_id": 2,
+            "long": 56.454545
+},
+        {
+            "stoppage_id": 7,
+            "order_no": 0,
+            "stoppage_name": "Ashok nagar",
+            "lat": 584,
+            "route_id": 2,
+            "long": 56.454545
+},
+        {
+            "stoppage_id": 8,
+            "order_no": 0,
+            "stoppage_name": "qutub minar",
+            "lat": 584,
+            "route_id": 3,
+            "long": 56.454545
+},
+        {
+            "stoppage_id": 9,
+            "order_no": 0,
+            "stoppage_name": "India gate",
+            "lat": 584,
+            "route_id": 3,
+            "long": 56.454545
+}
+
+
+
+    ]
+}

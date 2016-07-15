@@ -1,0 +1,480 @@
+Dump data into middleware database API:
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:Data synced successfully  Affected rows:26
+Response time:-482ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:262ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:243ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:255ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:230ms
+
+Dump data into middleware database API:
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:Data synced successfully  Affected rows:1
+Response time:-494ms
+
+Dump data into middleware database API:
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:Data synced successfully  Affected rows:3
+Response time:-422ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:253ms
+
+Dump data into middleware database API:
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:Data synced successfully  Affected rows:32
+Response time:672ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:-756ms
+
+Dump data into middleware database API:
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:Data synced successfully  Affected rows:32
+Response time:-367ms
+
+Dump data into middleware database API:
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:Data synced successfully  Affected rows:32
+Response time:-383ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:255ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:267ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:-758ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:246ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:236ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:-760ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:240ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:241ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:244ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:-755ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:249ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:241ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:240ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:-764ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:244ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:271ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:272ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:239ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:243ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:269ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:245ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:242ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:-733ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:240ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:239ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:260ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:-767ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:240ms
+
+Dump data into middleware database API:
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:Data synced successfully  Affected rows:1
+Response time:501ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:-752ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:245ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:243ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:244ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:252ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:-745ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:-759ms
+
+Dump data into middleware database API:
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:Data synced successfully  Affected rows:132
+Response time:8ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:252ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:-738ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:245ms
+
+Dump data into middleware database API:
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:Data synced successfully  Affected rows:1
+Response time:-452ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:253ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:240ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:-713ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:264ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:280ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:258ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:-750ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:273ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:270ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:-742ms
+
+Dump data into middleware database API:
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:Data synced successfully  Affected rows:1
+Response time:534ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:253ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:-740ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:258ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:260ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:286ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:254ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:264ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:274ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:-751ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:256ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:247ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:290ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:260ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:-752ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:266ms
+
+Dump data into middleware database API(Fetch data):
+Url path:http://10.0.21.140:3006/fee/data
+Request:
+Response:No new data found
+Response time:255ms
+

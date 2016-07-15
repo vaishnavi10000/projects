@@ -1,0 +1,30 @@
+{
+    "apiURL": "",
+    "appEnv": "dev",
+    "constantMsg": {
+        "Mobile_no": "Mobile number already exists",
+        "wrongFileExtension": "File type not valid",
+        "removeStudentConfirmation": "Are you sure want to remove selected student?",
+        "removeDriverConfirmation": "Are you sure want to delete selected driver?",
+        "updateDriverConfirmation": "Are you sure want to update selected driver?",
+        "unassignDriverConfirmation": "Are you sure want to unassign selected driver?",
+        "removeVehicleConfirmation": "Are you sure want to delete selected vehicle?",
+        "updateVehicleConfirmation": "Are you sure want to update selected vehicle?",
+        "seatLimitExceeded": "Students on this route exceeds the seat limit",
+        "vehicleUnassigned": "Vehicle Unassigned",
+        "vehicleAssigned": "Vehicle Assigned",
+        "vehicleNotFound": "No Assigned Vehicles Found",
+        "deleteConfirmation": "Are you sure want to delete selected Item?",
+        "removeStudentConfirmation": "Are you sure want to remove selected student?",
+        "updateRouteConfirmation": "Are you sure want to update selected route?",
+        "updateStoppageConfirmation": "Are you sure want to update selected stoppage?",
+        "stoppageExists": "Stoppage Already Exists",
+         "routeExists": "Route no. already exists",
+        "angularError": "Something went wrong.Please try again",
+        "noStudentSelected": "Select any student to add to stoppage",
+        "limitOfStudents": "You can not add more than 50 students",
+        "location" : "Start and end location cannot be same",
+        "routeUnavailable" : "No routes available"
+    }
+    
+}

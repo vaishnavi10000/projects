@@ -1,0 +1,14 @@
+<div class="col-sm-12" ng-init="getCurrentDriverLocation()">
+ <span class="alert alert-danger col-sm-12" ng-show="errorOccurred" >
+    {{errorMessage}}
+ </span>
+    <ng-map default-style="false" style="height:550px" zoom="15" center="{{driverLocationData.lat}}, {{driverLocationData.long}}">
+        <info-window id="myInfoWindow" position="{{driverLocationData.lat}}, {{driverLocationData.long}}">
+            <div ng-non-bindable="">
+                <p>{{address.formatted_address}}</p>
+            </div>
+        </info-window>
+        <marker position="{{driverLocationData.lat}},{{driverLocationData.long}}" icon="{path:'CIRCLE', scale: 2,fillColor:'Black',fillOpacity:1,strokeColor:'{{driverLocationData.loc_color}}',strokeWeight:10}" draggable="false" on-click="showCity(event, driverLocationData)">
+        </marker>
+    </ng-map>
+</div>

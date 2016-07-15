@@ -1,0 +1,77 @@
+<div class="col-sm-12" ng-init="getAvailableDrivers()">
+    <h4 class="alert alert-info">Add Driver</h4>
+    <div class="alert alert-{{infocolor}} fade in" ng-show="show">
+            {{msg}}
+    </div>
+    <form name="frm" novalidate>
+        <div class="form-group">
+            <div class="col-xs-12" style="padding:10px 10px 10px 0px;">
+                <label>Driver name</label><span class=" red_color">*</span></span>
+                <input class="form-control" type="text" id="driverName" ng-model="driverinfo.name" ng-pattern="$parent.resourceConfig.regPattern.Name" ng-minlength="2" ng-maxlength="50" ng-change="clearField()" uib-popover="Enter min 3/max 50 characters" popover-is-open="{{driverinfo.name.length==undefined}}" popover-enable=
+                       "{{driverinfo.name.length==undefined}}" popover-trigger="blur" popover-placement="top-right" ng-required="true">
+            </div>
+            <div class="col-xs-12" style="padding:10px 10px 10px 0px;">
+                <label>Mobile number</label><span class=" red_color">*</span></span>
+                <input class="form-control" type="text" id="mobileNo" placeholder="Max 10 digits" ng-model="driverinfo.mobile" ng-maxlength="10" ng-pattern="$parent.resourceConfig.regPattern.mobileNumber" ng-change="clearField()" ng-required="true" ng-keypress="limitKeypress($event,driverinfo.mobile,10)">
+                
+                <br/>
+                <div class="alert alert-warning fade in" ng-repeat="alert in alerts" ng-show="alert.show">
+                    <alert type="alert.type">{{alert.msg}}</alert>
+                </div>
+            </div>
+            <div ng-show="imgsrcShow">
+            Currently uploaded image
+             <img ng-src="{{driverinfo.licence}}" height="100" width="200"/>
+                <a class="file-cancel" href="javascript:void(0);" ng-click="removecurrentImage()">
+				REMOVE<i class="ion ion-android-close"></i>
+			</a>
+            </div>
+            <div class="col-xs-12" style="padding:10px 10px 10px 0px;">
+                <!--<input type="file" ng-file-select="onFileSelect($files)">-->
+                <!--<input class="form-control" type="text" id="licence" placeholder="Licence" ng-model="driverinfo.licence">-->
+               
+                <span class="btn btn-default btn-file">Upload Licence
+                     <input id="driverImage" name="file" onchange="angular.element(this).scope().file_changed(this)" type="file" accept="image/*" /> 
+                      </span>
+
+                <attachment attachments="attachments"></attachment>
+            </div>
+
+            <div class="col-xs-3 pull-right" style="padding:10px 10px 10px 0px;">
+                <button class="btn btn-info" ng-click="addDriverInfo()" ng-show="addBtn" ng-disabled="frm.$invalid">Add Driver</button>
+                <button class="btn btn-info" ng-click="editDriverInfo()" ng-show="editBtn" ng-disabled="frm.$invalid">Update Driver</button>
+                <button class="btn btn-info" ng-click="resetDriverInfo()" ng-show="resetBtn">Reset</button>
+            </div>
+        </div>
+    </form>
+    <div ng-show="gridOptions.length>0">
+    <h4 class="alert alert-info" style="clear:both;">Available Driver</h4>
+     <table class="table table-hover">
+        <thead>
+              <tr style="background:#d6d6c2">
+                  <th>Login Id</th>
+                <th>Driver Name</th>
+                <th>Mobile number</th>
+                <th>Licence</th>
+                  <th>Action</th>
+                   <th>Assigned</th>
+            </tr>
+        </thead>
+        <tr  ng-repeat="driverData in gridOptions">
+             <td>{{driverData.login_id}}</td>
+            <td>{{driverData.first_name}}</td>
+            <td>{{driverData.mobile_number}}</td>
+            <td><span ng-if="driverData.licence">  <a  title="Licence" style="cursor:pointer"> <i class="glyphicon glyphicon-file" style="font-size:23px;padding-right:1em" ng-click="displayLicence(driverData)"></i></a></span></td>
+            
+            <td>
+              <span ng-show="driverData.route_no"> <a title="Remove" style="cursor:not-allowed;color:grey"><i  class="glyphicon glyphicon-remove" style="font-size:23px;padding-right:1em"></i></a> </span>
+                <span ng-show="!driverData.route_no"> <a title="Remove" style="cursor:pointer" ><i  class="glyphicon glyphicon-remove" style="font-size:23px;padding-right:1em" ng-click="removeDriver(driverData)"></i></a> </span>
+            <a title="Edit" style="cursor:pointer"><i class="glyphicon glyphicon-edit" style="font-size:23px;padding-right:1em" ng-click="editDriver(driverData)"></i></a>
+                <span ng-show="!driverData.route_no"><a title="Assign Vehicle" style="cursor:pointer"><i class="glyphicon glyphicon-bed" style="font-size:23px" ng-click="assignBus(driverData)"></i></a> </span>
+                <span ng-show="driverData.route_no"><a title="Assign Vehicle" style="cursor:not-allowed;color:grey"><i class="glyphicon glyphicon-bed" style="font-size:23px"></i></a> </span>
+            </td>
+            <td> <span ng-if="driverData.route_no"> <a style="cursor:default"><i class="glyphicon glyphicon-ok" style="font-size:23px" ></i></a></span></td>
+        </tr>
+    </table>
+        </div>
+</div>

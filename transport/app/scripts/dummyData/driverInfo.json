@@ -1,0 +1,133 @@
+{
+  "driverInfo": [
+    {
+      "driverName": "Ram",
+      "driverId": "1234",
+      "routeNo": "2",
+      "busNo": "DL 13S F6196",
+      "lat": 28.604372,
+      "long": 77.372402,
+      "mobile": "09990062545",
+      "routeDetails": {
+        "startPoint": "infogain",
+        "endPoint": "educomp",
+        "stoppage": [
+          {
+            "stoppageName": "Mamura",
+            "morningArrivalTime": "7:30 AM",
+            "morningDepartureTime": "7:33 AM",
+            "eveningArrivalTime": "2:30 PM",
+            "eveningDepartureTime": "2:33 PM",
+            "lat": 980,
+            "long": 43,
+            "student": [
+              {
+                "studentName": "Ram",
+                "parentContactNo": "9990062545",
+                "class": "iv"
+              },
+              {
+                "studentName": "Amit",
+                "parentContactNo": "9990062546",
+                "class": "v"
+              }
+            ]
+          },
+          {
+            "stoppageName": "Bangel",
+            "morningArrivalTime": "8:30 AM",
+            "morningDepartureTime": "6:33 AM",
+            "eveningArrivalTime": "2:30 PM",
+            "eveningDepartureTime": "1:33 PM",
+            "lat": 980,
+            "long": 43,
+            "student": [
+              {
+                "studentName": "Jitendra",
+                "parentContactNo": "7990062545",
+                "class": "vi"
+              },
+              {
+                "studentName": "prakar",
+                "parentContactNo": "7990062546",
+                "class": "vii"
+              }
+            ]
+          }
+        ]
+      }
+    }, {
+      "driverName": "1Ram",
+      "driverId": "11234",
+      "routeNo": "12",
+      "busNo": "1DL 13S F6196",
+      "lat": 28.500000,
+      "long": 77.250000,
+      "mobile": "088989776",
+      "routeDetails": {
+        "startPoint": "1infogain",
+        "endPoint": "1educomp",
+        "stoppage": [
+          {
+            "stoppageName": "1Mamura",
+            "morningArrivalTime": "9:30 AM",
+            "morningDepartureTime": "0:33 AM",
+            "eveningArrivalTime": "3:30 PM",
+            "eveningDepartureTime": "4:33 PM",
+            "lat": 980,
+            "long": 43,
+            "student": [
+              {
+                "studentName": "1Ram",
+                "parentContactNo": "8990062545",
+                "class": "iiv"
+              },
+              {
+                "studentName": "1Amit",
+                "parentContactNo": "8890062546",
+                "class": "1v"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "driverName": "2Ram",
+      "driverId": "21234",
+      "routeNo": "22",
+      "busNo": "2DL 13S F6196",
+      "lat": 28.579850,
+      "long": 77.053751,
+      "mobile": "028989776",
+      "routeDetails": {
+        "startPoint": "2infogain",
+        "endPoint": "2educomp",
+        "stoppage": [
+          {
+            "stoppageName": "2Mamura",
+            "morningArrivalTime": "1:30 AM",
+            "morningDepartureTime": "6:33 AM",
+            "eveningArrivalTime": "4:30 PM",
+            "eveningDepartureTime": "5:33 PM",
+            "lat": 980,
+            "long": 43,
+            "student": [
+              {
+                "studentName": "2Ram",
+                "parentContactNo": "2990062545",
+                "class": "2iv"
+              },
+              {
+                "studentName": "2Amit",
+                "parentContactNo": "2890062546",
+                "class": "2v"
+              }
+            ]
+          }
+        ]
+      }
+    }
+
+  ]
+}

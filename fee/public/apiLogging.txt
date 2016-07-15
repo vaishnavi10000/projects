@@ -1,0 +1,40 @@
+Get Balance API:
+Url path:http://localhost:3003/balance/getBalance
+Request:{"school_id":2,"Admission_no":"A0002"}
+Start Time:91ms
+Response:{"InvoiceBalance":6000,"PaymentBalance":-3000,"Total_Balance":3000,"Status":"Payment Outstanding"}
+End Time:307ms
+Response time:216ms
+
+Get Balance API:
+Url path:http://localhost:3003/balance/getBalance
+Request:{"school_id":2,"Admission_no":"A0002"}
+Start Time:492ms
+Response:{"InvoiceBalance":6000,"PaymentBalance":-3000,"Total_Balance":3000,"Status":"Payment Outstanding"}
+End Time:504ms
+Response time:12ms
+
+Get Balance API:
+Url path:http://localhost:3003/balance/getBalance
+Request:{"school_id":2,"Admission_no":"A0002"}
+Start Time:40ms
+Response:{"InvoiceBalance":3000,"PaymentBalance":-6000,"Total_Balance":-3000,"Status":"Payment Advanced"}
+End Time:48ms
+Response time:8ms
+
+Get Balance API:
+Url path:http://localhost:3003/balance/getBalance
+Request:{"school_id":2,"Admission_no":"A0002"}
+Start Time:737ms
+Response:{"InvoiceBalance":3000,"PaymentBalance":-6000,"Total_Balance":-3000,"Status":"Payment Advanced"}
+End Time:749ms
+Response time:12ms
+
+Get Balance API:
+Url path:http://localhost:3003/balance/getBalance
+Request:{"school_id":2,"Admission_no":"A0002"}
+Start Time:795ms
+Response:{"InvoiceBalance":3000,"PaymentBalance":-6000,"Total_Balance":-3000,"Status":"Payment Advanced"}
+End Time:807ms
+Response time:12ms
+

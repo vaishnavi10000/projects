@@ -1,0 +1,73 @@
+<div class="col-sm-12" ng-init="getAvailableVehicles()">
+
+    <h4 class="alert alert-info">Add Vehicle</h4>
+
+
+    <div class="alert alert-{{infocolor}}" ng-show="showMessage">
+        <alert>{{msg}}</alert>
+    </div>
+    <form name="frm" id="vehicleForm" novalidate>
+        <div class="form-group">
+            <div class="col-xs-12" style="padding:10px 10px 10px 0px;">
+                <label>Vehicle type</label>
+                <select ng-model="vehicleinfo.typeId"  id="vehicleName" class="form-control" type="text" ng-options="veh.vehicle_type for veh in vehicleTypeArr" ng-required="true">
+                </select>
+            </div>
+            <div class="col-xs-12" style="padding:10px 10px 10px 0px;">
+                <label>Vehicle no.</label>
+                <input class="form-control" type="text" id="vehicleNo" ng-model="vehicleinfo.vehicleNo" ng-maxlength="15" uib-popover="max 15 characters/alphanumeric" popover-is-open="{{vehicleinfo.vehicleNo.length==undefined}}" popover-enable="{{vehicleinfo.vehicleNo.length==undefined}}" popover-trigger="blur" popover-placement="top-right" ng-change="clearMessage()" ng-required="true" ng-keypress="limitKeypress($event,vehicleinfo.vehicleNo,15)"
+                  ng-pattern="$parent.resourceConfig.regPattern.vehicleNumber" />
+            </div>
+            <div class="col-xs-12" style="padding:10px 10px 10px 0px;">
+                <label>Seats</label>
+                <input class="form-control" type="number" id="seats" min="1" max="50" placeholder="Max 50" ng-model="vehicleinfo.seats" ng-change="clearMessage()" ng-required="true">
+            </div>
+            <div class="col-xs-2 pull-right" style="padding:10px 10px 10px 0px;">
+                <button class="btn btn-info" ng-click="addVehicleInfo()" ng-disabled="frm.$invalid">{{btnLabel}}</button>
+            </div>
+        </div>
+    </form>
+    <!-- <div class="gridStyle col-sm-12" style="clear:both; padding:10px 0px;height:200px;" ui-grid="grid" ng-show="gridOptions.length">
+    </div>-->
+
+    <div ng-show="gridOptions.length">
+        <h4 class="alert alert-info" style="clear:both;">Vehicles</h4>
+        <table class="table table-hover" ng-show="gridOptions.length">
+            <thead>
+                <tr style="background:#d6d6c2">
+                    <th>VEHICLE TYPE</th>
+                    <th>VEHICLE NO</th>
+                    <th>SEATS</th>
+                    <th>ACTION</th>
+                    <th>DRIVER NAME</th>
+                    <th>ASSIGNED</th>
+                </tr>
+            </thead>
+            <tr ng-repeat="g in gridOptions">
+                <td>{{g.vehicle_type}}</td>
+                <td>{{g.vehicle_no}}</td>
+                <td>{{g.seats}}</td>
+                <td>
+                    <span ng-if="g.assigned == 0">
+                    <a title="Delete" style="cursor:pointer"> <i class="glyphicon glyphicon-remove" style="font-size:23px;padding-right:1em" ng-click="removeVehicle(g)"></i></a>
+                    <a title="Edit" style="cursor:pointer"><i class="glyphicon glyphicon-edit" style="font-size:23px;padding-right:1em" ng-click=" editVehicle(g)"></i></a>
+                    <a title="Assign Driver" style="cursor:pointer"><i  class="glyphicon glyphicon-user" style="font-size:23px;padding-right:1em" ng-click="assignDriver(g)"></i></a>
+                </span>
+                    <span ng-if="g.assigned == 1">
+                    <a title="Delete" style="cursor:not-allowed;color:grey"> <i class="glyphicon glyphicon-remove" style="font-size:23px;padding-right:1em"></i></a>
+                    <a title="Edit" style="cursor:not-allowed;color:grey"><i class="glyphicon glyphicon-edit" style="font-size:23px;padding-right:1em"></i></a>
+                    <a title="Assign Driver" style="cursor:not-allowed;color:grey"><i  class="glyphicon glyphicon-user" style="font-size:23px;padding-right:1em"></i></a>
+                </span>
+                </td>
+                <td>{{g.first_name}}</td>
+                <td>
+                    <span ng-if="g.assigned == 1">
+                    <a style="cursor:default;"> <i class="glyphicon glyphicon-ok" style="font-size:23px;padding-right:1em"></i></a>
+                </span>
+
+                </td>
+
+            </tr>
+        </table>
+    </div>
+</div>

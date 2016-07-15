@@ -1,0 +1,20 @@
+{
+    "vehicleDetails": [
+        {
+            "vehicle_id": 88
+            , "vehicle_name": "bus"
+            , "vehicle_no": "DL 13 SF 4565"
+            , "seats": 60
+}, {
+            "vehicle_id": 56
+            , "vehicle_name": "Cab1"
+            , "vehicle_no": "MP 14 SH 7655"
+            , "seats": 8
+}, {
+            "vehicle_id": 45
+            , "vehicle_name": "Cab2"
+            , "vehicle_no": "MH 83 JF 3452"
+            , "seats": 4
+}
+    ]
+}

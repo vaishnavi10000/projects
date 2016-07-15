@@ -1,0 +1,12 @@
+<div class="form-group" ng-show="attachments.length">
+    <div class="col-sm-6">
+        <p class="label label-attachments" ng-repeat="a in attachments">
+            <span id="{{a.name.split('.')[0]+'_'+a.size+'_'+a.lastModified}}">{{imagePreview(a)}}</span>
+            <span class="file-name">{{a.name}}</span>
+            <span class="file-size">({{formatBytes(a.size)}})</span>
+            <a class="file-cancel" href="javascript:void(0);" ng-click="removeImage($index)">
+				REMOVE<i class="ion ion-android-close"></i>
+			</a>
+        </p>
+    </div>
+</div>

@@ -1,0 +1,65 @@
+<div class="col-sm-12" ng-init="getAssignedVehicles()">
+    <h4 class="alert alert-info">Assign Vehicle-Driver-Routes</h4>
+    <form role="form" id="assignVehicleForm" name="assignVehicleForm">
+        <div class="alert alert-{{infocolor}}" ng-show="showErrorOrSuccess">
+            <alert>{{msg}}</alert>
+        </div>
+        <div class="alert alert-warning fade in" ng-show="showUnassignError">
+            <alert>cannot unassign</alert>
+        </div>
+        <div class="dropdown" style="padding:10px 0px;" ng-show="driverArr.length || readOnly">
+            <label>Driver Name</label><span class=" red_color">*</span>
+            <select class="btn btn-default dropdown-toggle text-left" style="width:100%" name="singleSelect" id="singleSelect" ng-disabled="readOnly" ng-model="selectedDriver" ng-options="driverArr.indexOf(d) as  d.first_name for d in driverArr" ng-change="removeMessage()" ng-class="{errorRed: errorRedFlagDriver}" onChange="angular.element(this).scope().errorRedFlagDriver = false">
+                <option value="" style="display:none">{{driverName}}</option>
+                <!-- not selected / blank option -->
+            </select>
+        </div>
+        <div class="alert alert-warning fade in" ng-show="showDriverAlert">
+            <alert>No unassigned drivers found</alert>
+        </div>
+        <div class="dropdown" style="padding:10px 0px;" ng-show="vehicleArr.length || readOnlyVehicle">
+            <label>Vehicle Number</label><span class=" red_color">*</span>
+            <select class="btn btn-default dropdown-toggle text-left" style="width:100%" name="singleSelect" id="singleSelect" ng-disabled="readOnlyVehicle" ng-model="selectedVehicle" ng-options="vehicleArr.indexOf(v) as  v.vehicle_no for v in vehicleArr" ng-change="removeMessage()" ng-class="{errorRed: errorRedFlagVechile}" onChange="angular.element(this).scope().errorRedFlagVechile = false" >
+                <option value="" style="display:none">{{vehicleNo}}</option>
+                <!-- not selected / blank option -->
+            </select>
+            
+        </div>
+        <div class="alert alert-warning fade in" ng-show="showVehicleAlert">
+            <alert>No unassigned vehicles found</alert>
+        </div>
+        <div class="dropdown" style="padding:10px 0px;" ng-show="routeArr.length">
+            <label>Route Number</label><span class=" red_color">*</span>
+            <select class="btn btn-default dropdown-toggle text-left" style="width:100%" name="singleSelect" id="singleSelect" ng-model="selectedRoute" ng-options="routeArr.indexOf(r) as r.route_no for r in routeArr" ng-change="removeMessage()" ng-class="{errorRed: errorRedFlagRoute}" onChange="angular.element(this).scope().errorRedFlagRoute = false">
+                <option value="" style="display:none">{{routeNo}}</option>
+                <!-- not selected / blank option -->
+            </select>
+        </div>
+        <div class="alert alert-warning fade in" ng-show="showRouteAlert || !routeArr.length">
+            <alert>No unassigned routes found</alert>
+        </div>
+        <div class="col-sm-12 " style="padding:10px 0px">
+            <button class="btn btn-info pull-right" ng-click="fetchLocation()" ng-disabled="assignVehicleValidator">Assign</button>
+        </div>
+    </form>
+    <div ng-show="gridOptions.length">
+          <h4 class="alert alert-info" style="clear:both;">Assigned Vehicle-Driver-Routes</h4>
+        <table class="table table-hover" ng-show="gridOptions.length">
+        <thead>
+              <tr style="background:#d6d6c2">
+                <th>DRIVER NAME</th>
+                <th>VEHICLE NO</th>
+                <th>ROUTE NO</th>
+                <th>UNASSIGN</th>    
+            </tr>
+        </thead>
+        <tr  ng-repeat="g in gridOptions">
+            <td>{{g.first_name}}</td>
+            <td>{{g.vehicle_no}}</td>
+            <td>{{g.route_no}}</td>
+            <td> <a title="unassign" style="cursor:pointer"> <i class="glyphicon glyphicon-remove" style="font-size:23px;padding-right:1em" ng-click="removeSelected(g)"></i></a></td>
+             
+        </tr>
+    </table>
+    </div>
+</div>

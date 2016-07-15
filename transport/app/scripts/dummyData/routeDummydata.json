@@ -1,0 +1,34 @@
+{
+    "Route": [
+{
+            "route_id": 1,
+            "route_no": 1,
+            "start_location": "Start Location Name",
+            "end_location": "End Location Name",
+            "driver_id": null,
+            "driver_name": "",
+            "vehicle_id": null,
+            "vehicle_name": "",
+            "vehicle_no": ""
+},{
+            "route_id": 2,
+            "route_no": 2,
+            "start_location": "Start Location Name",
+            "end_location": "End Location Name",
+            "driver_id": null,
+            "driver_name": "",
+            "vehicle_id": null,
+            "vehicle_name": "",
+            "vehicle_no": ""
+},{
+            "route_id": 3,
+            "route_no": 3,
+            "start_location": "Start Location Name",
+            "end_location": "End Location Name",
+            "driver_id": null,
+            "driver_name": "",
+            "vehicle_id": null,
+            "vehicle_name": "",
+            "vehicle_no": ""
+}
+]}

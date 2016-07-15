@@ -1,0 +1,69 @@
+<div class="col-sm-12" ng-init="getAvailableDetails()">
+    <h4 class="alert alert-info">Add Student</h4>
+    <div id="message" class="alert alert-{{infocolor}} fade in" ng-show="show">
+        {{msg}}
+    </div>
+    <form role="form" id="addStudent">
+        <div class="dropdown" style="padding:10px 0px;">
+            <label>Route</label><span class="red_color">*</span>
+            <select class="btn btn-default dropdown-toggle text-left" style="width:100%" name="singleSelect" ng-model="selectedRoute" id="singleSelect" ng-options="route as route.route_no for route in routeArr" ng-disabled="readOnlyRoute" ng-change="getStoppages(selectedRoute.id)" ng-class="{errorRed: errorRedFlagRoute}" onChange="angular.element(this).scope().errorRedFlagRoute = false">
+                <option value="" style="display: none;">{{routeName}}</option>{{selectedRoute}}
+                <!-- not selected / blank option -->
+            </select>
+            <br>
+        </div>
+        <div class="dropdown" style="padding:10px 0px;">
+            <label>Stoppage</label><span class="red_color">*</span>
+            <select class="btn btn-default dropdown-toggle text-left" style="width:100%" name="singleSelect" id="singleSelect" ng-model="selectedStoppage" ng-options="stoppage as stoppage.stoppage_name for stoppage in stoppageArr" ng-disabled="readOnlyStoppage" ng-change="changeStoppage(selectedStoppage)" ng-class="{errorRed: errorRedFlagStoppage}" onChange="angular.element(this).scope().errorRedFlagStoppage = false">
+                <option value="" style="display: none;">{{stoppageName}}<span class="caret"></span></option>
+                <!-- not selected / blank option -->
+            </select>
+            <br>
+        </div>
+        <div class="dropdown" style="padding:10px 0px;">
+            <label>Class</label><span class="red_color">*</span>
+            <select class="btn btn-default dropdown-toggle text-left" style="width:100%" name="singleSelect" id="singleSelect" ng-model="selectedClass" ng-options="class as class.class_name for class in classArr" ng-change="getSections(selectedClass)" ng-class="{errorRed: errorRedFlagClass}" onChange="angular.element(this).scope().errorRedFlagClass = false">
+                <option value="" style="display: none;">{{className}}<span class="caret"></span></option>
+                <!-- not selected / blank option -->
+            </select>
+            <br>
+        </div>
+        <div class="dropdown" style="padding:10px 0px;">
+            <label>Section</label><span class="red_color">*</span>
+            <select class="btn btn-default dropdown-toggle text-left" style="width:100%" name="singleSelect" id="singleSelect" ng-model="selectedSection" ng-options="section as section.section_name for section in sectionArr" ng-options="section as section.section_name for section in sectionArr" ng-change="changeSection(selectedSection)" ng-class="{errorRed: errorRedFlagSection}" onChange="angular.element(this).scope().errorRedFlagSection = false">
+                <option value="" style="display: none;">{{sectionName}}<span class="caret"></span></option>
+                <!-- not selected / blank option -->
+            </select>
+            <!-- <a ng-click="studentsList()" style="cursor:pointer"> <i class="glyphicon glyphicon-search" style="font-size:23px;padding-right:4em"></i> </a>-->
+            <br>
+        </div>
+        <br/>
+        <div class="col-sm-12">
+
+            <div class="col-sm-12 " style="padding:10px 0px">
+                <button class="btn btn-info pull-right" ng-click="addStudents()" ng-disabled="activeButton">Add Students</button>
+            </div>
+            <div class="col-sm-12 " style="padding:10px 0px" ng-show="showStudentList"><b>List Of Students</b>
+                <div class="checkbox">
+
+                    <label ng-repeat="students in studentArr" class="col-sm-3">
+                        <input type="checkbox" ng-model="ids[$index]" ng-change="addIds($index,students.student_id)" />{{students.first_name}} {{students.last_name}}
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12" style="padding:10px 0px" ng-hide="hide">
+            <ul class="list-group" style="clear:both;cursor:pointer;">
+                <li class="list-group-item" ng-repeat="stoppage in stoppageStudentArr" style="overflow:auto; clear:both;">
+                    <div> Stoppage : {{stoppage.stoppage_name}}</div>
+                    <br/>
+                    <div class="col-sm-3" ng-repeat="student in stoppage.students">
+                        <span>{{student.first_name}} {{student.last_name}}</span>
+                        <span class="pull-right"> <a title="Remove"> <i class="glyphicon glyphicon-remove" style="font-size:12px;padding-right:1em" ng-click="removeStudent(stoppage,student,$index)"></i></a></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </form>
+</div>

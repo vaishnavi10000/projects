@@ -1,0 +1,34 @@
+{
+    "transport":[
+        {
+            "statuscode":1001,
+            "action":"DB connection error",
+            "desciption":"Internal server error!"
+        },
+        {
+            "statuscode":1002,
+            "action":"Data Fetched",
+            "desciption":"Success"
+        },
+         {
+            "statuscode":1003,
+            "action":"DB query error",
+            "desciption":"Internal server error!"
+        },
+        {
+            "statuscode":1004,
+            "action":"DB connection timeout error",
+            "desciption":"Internal server error!"
+        },
+         {
+            "statuscode":1042,
+            "action":"Auth",
+            "desciption":"Credentials missing"
+        },
+        {
+            "statuscode":1043,
+            "action":"Server Error",
+            "desciption":"Internal Server Error!"
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "transport":[
+        {
+            "statuscode":1001,
+            "action":"DB connection error",
+            "desciption":"Internal server error!"
+        },
+        {
+            "statuscode":1002,
+            "action":"DB query error",
+            "desciption":"Internal server error!"
+        },
+        {
+            "statuscode":1003,
+            "action":"DB connection timeout error",
+            "desciption":"Internal server error!"
+        },
+        {
+            "statuscode":1004,
+            "action":"Route",
+            "desciption":"Start/End location and Route no. are required!"
+        },
+        {
+            "statuscode":1005,
+            "action":"Route",
+            "desciption":"No stoppage found on this route"
+        },
+        {
+            "statuscode":1006,
+            "action":"Stoppage",
+            "desciption":"Stoppage added succesfully"
+        },
+        {
+            "statuscode":1007,
+            "action":"Stoppage",
+            "desciption":"Stoppage deleted sucessfully"
+        },
+        {
+            "statuscode":1008,
+            "action":"Server Error",
+            "desciption":"Internal Server Error!"
+        }
+    ]
+}

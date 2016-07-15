@@ -1,0 +1,34 @@
+{
+    "driverDetails": [
+        {
+            "driver_id": 1
+            , "driver_name": "Ram"
+            , "mobile_no": "9992200546"
+            , "licence": "image"
+            , "route_id": 3
+            , "route_no": 399
+            , "vehicle_id": 88
+            , "vehicle_no": "DL 13 SF 4565"
+ }, {
+            "driver_id": 1
+            , "driver_name": "Himanshu"
+            , "mobile_no": "8765987890"
+            , "licence": "image"
+            , "route_id": 4
+            , "route_no": 567
+            , "vehicle_id": 56
+            , "vehicle_no": "MP 14 SH 7655"
+ }, {
+            "driver_id": 1
+            , "driver_name": "Abhishek"
+            , "mobile_no": "7650987097"
+            , "licence": "image"
+            , "route_id": 5
+            , "route_no": 655
+            , "vehicle_id": 45
+            , "vehicle_no": "MH 83 JF 3452"
+ }
+
+    ]
+
+}

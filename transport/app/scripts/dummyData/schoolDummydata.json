@@ -1,0 +1,55 @@
+{
+	"Schools": [{
+		"SchoolId": 123456,
+		"SchoolName": "Delhi public school",
+		"Classes": [{
+			"ClassId": 1,
+			"ClassName": "KG",
+			"Sections": [{
+					"SectionName": "A"
+				}, {
+					"SectionName": "B"
+				}, {
+					"SectionName": "C"
+				}
+
+			]
+		}, {
+			"ClassId": 2,
+			"ClassName": "1st",
+			"Sections": [{
+					"SectionName": "A1"
+				}, {
+					"SectionName": "B1"
+				}, {
+					"SectionName": "C1"
+				}
+
+			]
+		}, {
+			"ClassId": 3,
+			"ClassName": "2nd",
+			"Sections": [{
+					"SectionName": "A2"
+				}, {
+					"SectionName": "B2"
+				}, {
+					"SectionName": "C2"
+				}
+
+			]
+		}, {
+			"ClassId": 4,
+			"ClassName": "3rd",
+			"Sections": [{
+					"SectionName": "A3"
+				}, {
+					"SectionName": "B3"
+				}, {
+					"SectionName": "C3"
+				}
+
+			]
+		}]
+	}]
+}

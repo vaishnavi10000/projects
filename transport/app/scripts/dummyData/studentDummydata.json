@@ -1,0 +1,29 @@
+{
+    "Student": [{
+            "name": "Abhishek",
+            "rollNo": "2130942",
+            "contactNo": "9829155432"
+    },
+        {
+            "name": "Ram",
+            "rollNo": "2130941",
+            "contactNo": "9829155892"
+    },
+        {
+            "name": "Neeraj",
+            "rollNo": "2130342",
+            "contactNo": "9829235432"
+    },
+        {
+            "name": "Prakhar",
+            "rollNo": "2130876",
+            "contactNo": "9234155432"
+    },
+        {
+            "name": "Ajay",
+            "rollNo": "2130098",
+            "contactNo": "9829155987"
+    } ]
+
+
+}
